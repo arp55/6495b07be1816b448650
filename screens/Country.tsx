@@ -18,7 +18,7 @@ export default function Country({navigation}:Props) {
     const dispatch = useDispatch()
     console.log(country)
     return (
-        <View style={Styles.infoScreen}>
+        <View style={Styles.infoScreen} testID="country-screen">
             <View style={Styles.infoCard}>
                 <Text style={Styles.info}>Capital: {country.capital}</Text>
                 <Text style={Styles.info}>Population: {country.population}</Text>

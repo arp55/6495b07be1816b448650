@@ -13,7 +13,7 @@ export default function Weather() {
     )
 
     return (
-        <View style={Styles.infoScreen}>
+        <View style={Styles.infoScreen} testID="weather-screen">
             <View style={Styles.infoCard}>
                 <Text style={Styles.info}>Temperature: {weather.temperature}</Text>
                 <FlatList style={Styles.list} data={weather.weather_icons} renderItem={renderItem} keyExtractor={item=>item}/>
