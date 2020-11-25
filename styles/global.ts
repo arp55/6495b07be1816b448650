@@ -1,0 +1,54 @@
+import { StyleSheet } from "react-native";
+
+export default StyleSheet.create({
+    container:{
+        flex:1,
+        alignItems:'stretch',
+        paddingHorizontal:25,
+        paddingVertical:60,
+    },
+    textInput:{
+        borderBottomColor:"#777",
+        borderBottomWidth:1,
+        fontSize:20,
+        marginBottom:40
+    },
+    button:{
+        backgroundColor:'rgb(200,200,100)',
+        paddingVertical:5,
+        paddingHorizontal:10,
+        marginTop:20,
+        borderRadius:5
+    },
+    btnText:{
+        color:'#fff',
+        fontSize:20,
+    },
+    icons:{
+        height:30,
+        width:30
+    },
+    list:{
+        flexDirection:'column'
+    },
+    infoScreen:{
+        paddingVertical:20,
+        paddingHorizontal:20,
+        flex:1,
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    infoCard:{
+        width:300,
+        alignItems:'center',
+        fontSize:20,
+        borderColor:'#777',
+        borderRadius:10,
+        borderWidth:1,
+        paddingVertical:50
+    },
+    info:{
+        fontSize:20,
+        margin:3
+    }
+})
