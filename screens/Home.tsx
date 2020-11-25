@@ -17,7 +17,7 @@ export default function Home({navigation}:Props) {
     return (
         <View style={Styles.container} testID="home-screen">
             <TextInput style={Styles.textInput} onChangeText={(text)=>setCountry(text)}  placeholder="Enter country" />
-            <Button color="skyblue" title="Submit" onPress={()=>dispatch(getCountry(country,navigation))} />
+            <Button color="skyblue" title="Submit" onPress={()=>dispatch(getCountry(country,navigation))} disabled={!country}/>
         </View>
     )
 }

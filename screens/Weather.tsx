@@ -15,10 +15,10 @@ export default function Weather() {
     return (
         <View style={Styles.infoScreen} testID="weather-screen">
             <View style={Styles.infoCard}>
-                <Text style={Styles.info}>Temperature: {weather.temperature}</Text>
+                <Text style={Styles.info}>Temperature: <Text style={Styles.infoValues}>{weather.temperature}</Text></Text>
                 <FlatList style={Styles.list} data={weather.weather_icons} renderItem={renderItem} keyExtractor={item=>item}/>
-                <Text style={Styles.info}>Wind Speed: {weather.wind_speed}</Text>
-                <Text style={Styles.info}>Precipitation: {weather.precip}</Text>
+                <Text style={Styles.info}>Wind Speed:  <Text style={Styles.infoValues}>{weather.wind_speed}</Text></Text>
+                <Text style={Styles.info}>Precipitation:  <Text style={Styles.infoValues}>{weather.precip}</Text></Text>
             </View>
         </View>
     )

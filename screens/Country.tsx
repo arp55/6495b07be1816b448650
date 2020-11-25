@@ -20,9 +20,9 @@ export default function Country({navigation}:Props) {
     return (
         <View style={Styles.infoScreen} testID="country-screen">
             <View style={Styles.infoCard}>
-                <Text style={Styles.info}>Capital: {country.capital}</Text>
-                <Text style={Styles.info}>Population: {country.population}</Text>
-                <Text style={Styles.info}>LatLng: {country.latlng}</Text>
+                <Text style={Styles.info}>Capital: <Text style={Styles.infoValues}>{country.capital}</Text></Text>
+                <Text style={Styles.info}>Population:  <Text style={Styles.infoValues}>{country.population}</Text></Text>
+                <Text style={Styles.info}>LatLng:  <Text style={Styles.infoValues}>{country.latlng}</Text></Text>
                 <Text style={Styles.info}>Flag:</Text>
                 <SvgUri height="30%" width="40%" uri={country.flag}/>
                 <TouchableOpacity style={Styles.button} onPress={()=>dispatch(getWeather(country.capital,navigation))}><Text style={Styles.btnText}>Capital Weather</Text></TouchableOpacity>

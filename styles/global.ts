@@ -17,7 +17,7 @@ export default StyleSheet.create({
         backgroundColor:'rgb(200,200,100)',
         paddingVertical:5,
         paddingHorizontal:10,
-        marginTop:20,
+        marginTop:60,
         borderRadius:5
     },
     btnText:{
@@ -48,7 +48,11 @@ export default StyleSheet.create({
         paddingVertical:50
     },
     info:{
-        fontSize:20,
+        fontSize:18,
         margin:3
+    },
+    infoValues:{
+        fontSize:20,
+        color:'rgb(103,103,189)'
     }
 })
